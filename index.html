@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高雄旅遊資訊 - js最終作業</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/all.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerBg"></div>
+        <h1 class="headerTitle">高雄旅遊資訊</h1>
+        <div>
+            <select name="city" id="CitySelect" class="cityselect">
+                <option value="">--所有行政區--</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div class="hotCity">
+            <h3 class="hotCity_title">熱門行政區</h3>
+            <nav id="Hot_City" class="hotCity_nav">
+                <!-- 
+                <a class="btn btnColor1" href="#">小港區</a>
+                <a class="btn btnColor2" href="#">小港區</a>
+                <a class="btn btnColor3" href="#">小港區</a>
+                <a class="btn btnColor4" href="#">小港區</a> 
+                -->
+                <template id="Hot_City_template">
+                    <a class="btn" href="#"></a>
+                </template>
+            </nav>
+        </div>
+        <div class="br"><img src="/image/icons_down.png" alt="" class="br-icon"></div>
+        <section class="section">
+            <h1 id="List_Titile" class="section-title">所有行政區域</h1>
+            <ul id="Card_List" class="cardlist"></ul>
+            <template id="cardTemplate">
+                <li class="card">
+                    <div class="cardHeader">
+                        <div class="cardBg" style="background-image: url(/image/the-urban-landscape-1698285.png);"></div>
+                        <h2 class="cardtitle"></h2>
+                        <span class="cardsubtitle"></span>
+                    </div>
+                    <div class="cardBody">
+                        <ul class="cityInfo">
+                            <li><span class="icon">
+                                    <img src="/image/icons_clock.png" alt="開放時間"></span>
+                                <span class="businesshour"></span>
+                            </li>
+                            <li><span class="icon">
+                                    <img src="/image/icons_pin.png" alt="地址"></span>
+                                <span class="address"></span>
+                            </li>
+                            <li><span class="icon">
+                                    <img src="/image/icons_phone.png" alt="電話"></span>
+                                <span class="phone"></span>
+                            </li>
+                        </ul>
+                        <div class="ticketStatus">
+                            <span class="icon"><img src="/image/icons_tag.png" alt="開放時間"></span>免費參觀
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </section>
+
+    </main>
+    <footer>
+        <p>高雄資訊網 || 資料來源：高雄市政府</p>
+        <small>
+            trtiger4520
+            <br/>
+            image via <a href="http://www.peakpx.com">Peakpx</a>
+        </small>
+    </footer>
+</body>
+
+</html>

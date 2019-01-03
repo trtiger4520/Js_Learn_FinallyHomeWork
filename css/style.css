@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+html, select, button, input {
+    font-family: Arial, '微軟正黑體', sans-serif, serif;
+}
+
+body {
+    background-color: Rgb(247,247,247);
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.headerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/image/the-urban-landscape-1698285.png);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.headerTitle {
+    margin-top: 69px;
+    margin-bottom: 96px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3.89px;
+}
+
+.cityselect {
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    display: inline-block;
+    width: 452px;
+    max-width: 100%;
+    padding: 10.5px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 21px;
+    margin-bottom: 87px;
+}
+
+main {
+    position: relative;
+}
+
+
+.section {
+    padding-left: calc(20px + 10%);
+    padding-right: calc(20px + 10%);
+}
+
+.section-title {
+    text-align: center;
+    color: #8A82CC;
+}
+
+.hotCity {
+    margin-top: -28px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    width: 800px;
+    max-width: 100%;
+    min-height: 112px;
+    padding: 20px;
+}
+
+.hotCity_title {
+    margin-bottom: 10px;
+}
+
+.hotCity_nav {
+    padding: 0 5px;
+}
+
+
+/* --a link button Start-- */
+
+a.btn {
+    display: inline-block;
+    padding: 11px 34px;
+    background-color: rgb(151, 151, 151);
+    border-radius: 5px;
+    border: 1px solid rgb(151, 151, 151);
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 18px;
+    margin: 5px 8px;
+}
+
+a.btn:hover {
+    background-color: rgb(200,200,200);
+}
+
+.btnColor1 {
+    background-color: #8A82CC !important;
+    border-color: #8A82CC !important;
+    color: white !important;
+}
+
+.btnColor1:hover {
+    background-color: rgb(172, 167, 221) !important;
+}
+
+.btnColor2 {
+    background-color: #FFA782 !important;
+    border-color: #FFA782 !important;
+    color: white !important;
+}
+
+.btnColor2:hover {
+    background-color: rgb(255, 201, 179) !important;
+}
+
+.btnColor3 {
+    background-color: #F5D105 !important;
+    border-color: #F5D105 !important;
+    color: white !important;
+}
+
+.btnColor3:hover {
+    background-color: rgb(255, 236, 128) !important;
+}
+
+.btnColor4 {
+    background-color: #559AC8 !important;
+    border-color: #559AC8 !important;
+    color: white !important;
+}
+
+.btnColor4:hover {
+    background-color: rgb(153, 204, 238) !important;
+}
+
+/* --a link button End-- */
+
+
+
+.br {
+    position: relative;
+    text-align: center;
+    margin: 50px calc(30px + 10%);
+    border-bottom: 1px dashed #559acb;
+}
+
+.br-icon {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    padding: 11px 6px 5px 6px;
+    border: 1px solid #559acb;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    
+}
+
+
+/* --card list Start-- */
+
+.cardlist {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: -20px;
+    margin-left: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.cardlist .card {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+@media (min-width: 768px) {
+    .cardlist .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1280px) {
+    .cardlist .card {
+        flex-basis: calc(33% - 20px);
+    }
+}
+
+.cardHeader {
+    position: relative;
+    padding: 100px 24px 10px 24px;
+    color: white;
+    z-index: 1;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .75);
+}
+.cardBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgb(184, 184, 184);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.cardBody {
+    padding: 24px;
+}
+.cardBody::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cityInfo {
+    padding-left: 32px;
+    list-style: none;
+    float: left;
+}
+
+.cityInfo li {
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.cityInfo li:last-child {
+    margin-bottom: 0;
+}
+
+.cityInfo .icon {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left: -32px;
+    margin-right: 7px;
+    width: 27px;
+    height: 27px;
+    vertical-align:middle;
+}
+
+.cityInfo .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.ticketStatus {
+    float: right;
+    padding: 0 5px 0 5px;
+}
+
+.ticketStatus .icon {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    vertical-align:middle;
+}
+
+.ticketStatus .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* --card list End-- */
+
+
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    background: #559AC8;
+    color: whitesmoke;
+}
